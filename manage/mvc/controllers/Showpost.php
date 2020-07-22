@@ -7,12 +7,10 @@ class Showpost extends Controller
 {
 	
     public $ProductModel;
-    public $PostModel;
 
 	public function __construct()
 	{
         $this->ProductModel = $this->model("ProductModel");
-        $this->PostModel = $this->model("PostModel");
    	}
 
 
