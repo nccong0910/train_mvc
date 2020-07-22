@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule "^([a-zA-Z0-9]+)$" index.php?url=$1
+
+RewriteRule "Home/([0-9]+)$" "index.php?url=Home&page=$1"
+
+RewriteRule "Newpost/addpost" "index.php?url=Newpost/addpost"
+
+RewriteRule "Showpost/show/([0-9]+)$" "index.php?url=Showpost/show&id=$1"
+
+RewriteRule "Edit/([0-9]+)$" "index.php?url=Edit&id=$1"
+RewriteRule "Edit/editpost/([0-9]+)$" "index.php?url=Edit/editpost&id=$1"
+
+RewriteRule "Delete/([0-9]+)$" "index.php?url=Delete&id=$1"
+RewriteRule "Delete/delete/([0-9]+)$" "index.php?url=Delete/delete&id=$1"
+
+
