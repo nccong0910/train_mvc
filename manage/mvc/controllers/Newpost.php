@@ -7,12 +7,10 @@ class Newpost extends Controller
 {
 	
     public $ProductModel;
-    public $PostModel;
 
 	public function __construct()
 	{
         $this->ProductModel = $this->model("ProductModel");
-        $this->PostModel = $this->model("PostModel");
    	}
 
 
@@ -41,7 +39,7 @@ class Newpost extends Controller
             //echo $title;
             //insert database
             
-            $kq = $this->PostModel-> InsertNewPost($title, $description, $image);
+            $kq = $this->ProductModel-> InsertNewPost($title, $description, $image);
 
             $this->view("master1",[
                 "page"=>"newpost",
