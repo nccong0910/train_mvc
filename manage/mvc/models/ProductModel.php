@@ -1,9 +1,7 @@
 <?php
 class ProductModel extends DB{
 
-    public $per_page=5;
-    public $total;
-    public $current =1;
+
     public function getProduct(){
         $sql = "SELECT * FROM product";
         return mysqli_query($this->con, $sql);
