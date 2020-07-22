@@ -33,16 +33,6 @@
     	</tr>
 	<?php } ?>
 </table>
-<?php
-//var_dump($data['item_per_page']); exit;
-/*
-for ($num =1; $num<=$data['totalPages'] ; $num++){ ?>
-	<a class="page-item" href="Home/per_page=<?php echo $data['item_per_page']; ?>&page=<?php echo $num; ?>">
-		<?php echo $num; ?>
-	</a>
-<?php } 
-*/
-?>
 
 <?php
 
